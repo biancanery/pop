@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>POP — Gerações do Pop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --preto: #0d0d0d;
+      --vermelho: #f05ece;
+      --cinza: #222;
+      --branco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background: var(--preto);
+      color: var(--branco);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--vermelho);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .brand {
+      font-family: 'Anton', sans-serif;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      color: var(--branco);
+      text-shadow: 3px 3px var(--cinza);
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+    .menu a {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--branco);
+      text-transform: uppercase;
+      margin: 0 12px;
+      transition: 0.3s;
+    }
+    .menu a:hover {
+      color: var(--preto);
+      background: var(--branco);
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(180deg, var(--cinza), var(--preto));
+    }
+    .hero h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2.8rem;
+      color: var(--vermelho);
+      text-shadow: 4px 4px var(--cinza);
+      letter-spacing: 3px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #ddd;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .icons {
+      margin-top: 20px;
+      font-size: 1.8rem;
+    }
+    .icons i {
+      margin: 0 12px;
+      color: var(--vermelho);
+      transition: transform 0.3s;
+    }
+    .icons i:hover {
+      transform: scale(1.2) rotate(-10deg);
+      color: var(--branco);
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    h2 {
+      font-family: 'Anton', sans-serif;
+      color: var(--vermelho);
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px var(--cinza);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+    }
+    @media (max-width:700px){ .grid{grid-template-columns:1fr} }
+
+    .card {
+      background: var(--cinza);
+      border: 2px solid var(--vermelho);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 160px; /* menor altura */
+      object-fit: cover;
+      object-position: center;
+    }
+    .card .content {
+      padding: 12px;
+    }
+    .card h3 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.3rem;
+      color: var(--vermelho);
+      text-transform: uppercase;
+      margin: 6px 0;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #ddd;
+      margin-top: 6px;
+    }
+    .badge {
+      font-family: 'Oswald', sans-serif;
+      background: var(--vermelho);
+      color: var(--branco);
+      font-weight: bold;
+      padding: 3px 6px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      background: var(--vermelho);
+      color: var(--branco);
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">POP</div>
+    <nav class="menu">
+      <a href="#home">Início</a>
+      <a href="#destaques">Grupos</a>
+      <a href="#rock">Rock</a>
+      <a href="#classica">Clássicas</a>
+      <a href="#k-pop">Forró</a>
+      <a href="#mpb">Mpb</a>
+      <a href="#pop">K-Pop</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>POP — Gerações do Pop</h1>
+      <div class="icons">
+        <i class="fa-solid fa-heart"></i>
+         <i class="fa-solid fa-music"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </section>
+
+    <section id="destaques">
+      <h2>cantores destacados</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="michaeljackson.jpg">
+          <div class="content">
+            <span class="badge">Rei do Pop</span>
+            <h3>Michael Jackson</h3>
+            <p>
+               Michael Jackson, conhecido mundialmente como o Rei do Pop, foi um artista cuja influência ultrapassou fronteiras, gerações e estilos musicais. Desde criança, já demonstrava um talento incomum, destacando-se no Jackson 5 antes de construir uma carreira solo que se tornaria uma das mais bem-sucedidas da história. Com álbuns revolucionários como Off the Wall, Thriller e Bad, ele redefiniu o conceito de música pop, elevando a produção musical, a dança e principalmente o videoclipe a novos patamares — vide Thriller, o clipe mais icônico de todos os tempos. Sua habilidade vocal, estilo inovador, passos marcantes como o moonwalk e seu impacto cultural gigantesco fazem dele uma das figuras mais influentes da música e do entretenimento mundial. Mesmo após sua morte, sua arte continua moldando o cenário musical contemporâneo.
+
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="madonna.jpg">
+          <div class="content">
+            <span class="badge">Rainha do Pop</span>
+            <h3>MADONNA</h3>
+            <p>
+                Madonna, frequentemente chamada de Rainha do Pop, é um dos maiores símbolos de reinvenção, liberdade artística e ousadia da cultura pop. Desde os anos 80, ela dominou as paradas com sua mistura de pop, dança e provocação, tornando-se não apenas uma cantora de sucesso, mas também um ícone cultural e fashion. Álbuns como Like a Virgin, True Blue e Ray of Light mostram sua capacidade de se reinventar e continuar relevante em diferentes épocas. Madonna sempre explorou temas como sexualidade, religião, empoderamento feminino e identidade de forma inovadora e, muitas vezes, controversa, abrindo portas para artistas futuros. Além da música, sua presença no cinema, moda, ativismo e estética visual ajudou a moldar a cultura pop moderna como a conhecemos.
+</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="bruno.jpg">
+          <div class="content">
+            <span class="badge">Showman</span>
+            <h3>Bruno Mars</h3>
+            <p>
+            Bruno Mars é um dos artistas mais versáteis e carismáticos do cenário musical contemporâneo. Cantor, compositor, multi-instrumentista e produtor, ele combina elementos de funk, soul, R&B, pop e música retrô com maestria. Conhecido por hits globais como Locked Out of Heaven, Uptown Funk e 24K Magic, Bruno entrega uma musicalidade impecável e uma presença de palco que remete aos grandes showmen das décadas passadas. Suas performances são marcadas por energia, precisão coreográfica, humor e um profundo respeito pela herança musical que inspira seu som. Ao lado do Silk Sonic, parceria com Anderson .Paak, mostrou mais uma vez sua versatilidade ao mergulhar no soul e R&B setentista. Mars é reconhecido por sua qualidade artística, autenticidade e paixão intensas por cada detalhe de sua produção.
+          </div>
+        </div>
+        <div class="card">
+          <img src="gaga.jpg">
+          <div class="content">
+            <span class="badge">Mother Monster</span>
+            <h3>Lady Gaga</h3>
+            <p>Lady Gaga é uma das artistas mais inovadoras e multifacetadas da música moderna. Estreou no pop com o álbum The Fame, trazendo sucessos como Poker Face e Just Dance e rapidamente chamou atenção por sua estética ousada, teatralidade e narrativa artística disruptiva. Gaga construiu uma carreira baseada em criatividade ilimitada, transitando com facilidade entre pop, eletrônica, jazz, rock e baladas dramáticas. Seu talento vai além da música — ela é uma performer completa, que combina moda conceitual, mensagens sociais e performances intensas. Em A Star Is Born, mostrou seu talento como atriz, conquistando elogios da crítica e um Oscar pela canção Shallow. Gaga é também uma forte defensora da saúde mental e dos direitos LGBTQIA+, sempre usando sua plataforma para empoderar e inspirar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="justin.jpg">
+          <div class="content">
+            <span class="badge">Príncipe do Pop</span>
+            <h3>Justin Bieber</h3>
+            <p>Justin Bieber começou sua trajetória como um adolescente descoberto no YouTube e rapidamente se tornou um fenômeno global. Seu talento vocal, carisma e presença constante nas mídias sociais o transformaram em um dos maiores nomes do pop da década de 2010. Ao longo dos anos, evoluiu musicalmente, passando do pop juvenil para o R&B, eletrônica e sonoridades mais adultas e introspectivas, como se vê em Purpose e Justice. Enfrentou desafios pessoais e pressões da fama, mas transformou essa jornada em parte de sua narrativa artística, aproximando-se ainda mais de seus fãs. Com uma das fanbases mais dedicadas do mundo, Bieber se consolidou como um artista versátil, emocionalmente autêntico e influente na cultura pop contemporânea. </p>
+          </div>
+        </div>
+       <div class="card">
+          <img src="olivia.jpg">
+          <div class="content">
+            <span class="badge">Princesinha da nova geração</span>
+            <h3>Olivia Rodrigo</h3>
+            <p>Olivia Rodrigo é uma das vozes mais marcantes da nova geração da música pop. Começou sua carreira como atriz, mas rapidamente conquistou o cenário musical global com o lançamento de drivers license, um fenômeno instantâneo que capturou emoções juvenis com profundidade e vulnerabilidade. Seu álbum de estreia, SOUR, mistura pop, rock alternativo e indie com letras confessionais que exploram temas como primeiros amores, inseguranças, frustrações e autodescoberta. Olivia se destaca por sua habilidade de transformar sentimentos brutos em músicas poderosas e relacionáveis, consolidando-se como uma compositora talentosa e autêntica. Seu segundo álbum, mais maduro e experimental, reforça sua posição como uma das artistas mais promissoras, influentes e genuínas da atualidade.</p>
+          </div>
+        </div>
+
+           </section>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p style="text-align:center">Este site celebra as Gerações do Pop </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 POP — Feito no Brasil 
+  </footer>
+</body>
+</html>
